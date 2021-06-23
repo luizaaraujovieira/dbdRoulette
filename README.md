@@ -1,2 +1,2 @@
 # dbdRoulette
-Roulette for the game Dead By Daylight
+Dead By Daylight Roulette for killers, suvivors, killer's perks, survivor's perks
