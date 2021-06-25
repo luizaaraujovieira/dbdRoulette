@@ -11,7 +11,7 @@
     <h2>Dead by Daylight Roulette</h2>
 
     <a class="waves-effect waves-red btn red darken-4" id='killerButtom'>Killer Roulette</a>
-    <a class="waves-effect waves-red btn red darken-4" id='killerButtom'>Killer's perks Roulette</a>
+    <a class="waves-effect waves-red btn red darken-4" id='killerPerksButtom'>Killer's perks Roulette</a>
     <a class="waves-effect waves-red btn red darken-4" id='killerButtom'>Survivor Roulette</a>
     <a class="waves-effect waves-red btn red darken-4" id='killerButtom'>Survivor's perks Roulette</a>
     
@@ -26,7 +26,21 @@
     <div id ='resultContainer'>
     </div>
     
+    <script>
+        function getRandomSubarray(arr, size) {
+            var shuffled = arr.slice(0), i = arr.length, temp, index;
+            while (i--) {
+                index = Math.floor((i + 1) * Math.random());
+                temp = shuffled[index];
+                shuffled[index] = shuffled[i];
+                shuffled[i] = temp;
+        }
+    return shuffled.slice(0, size);
+}
+    </script>
+    <script src='objects.js'></script>
     <script src='killerRoulette.js'></script>
+    <script src='killerPerksRoulette.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
